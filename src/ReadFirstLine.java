@@ -4,7 +4,7 @@ public class ReadFirstLine {
     public static void main(String[] args) {
         File file = new File("info.txt");
 
-        // Using try-with-resources to ensure automatic resource management
+
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String firstLine = br.readLine(); // Read first line
             if (firstLine != null) {
